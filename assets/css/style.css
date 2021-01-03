@@ -1,0 +1,87 @@
+.castle-recs {
+    padding: 60px 0;
+
+}
+
+.section-heading {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-family: Lato;
+    letter-spacing: 5px;
+}
+
+.card {
+    border: none;
+    background: #fff;
+}
+
+.castle-img-area {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card-one:hover .side-two{
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+
+.card-one:hover .side-one{
+    transform: rotateY(180deg);
+    
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two{
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+}
+
+.side-one .card, 
+.side-two .card {
+    min-height: 312px;
+}
+
+.side-two .card a {
+    font-size: 18px;
+    color: brown;
+}
+
+h4 {
+    color: brown;
+    font-family: Lato;
+    letter-spacing: 5px;
+    font-size: 25px; 
+}
+
+p {
+    font-family: Lato;
+}
